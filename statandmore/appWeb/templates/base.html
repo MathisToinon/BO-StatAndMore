@@ -45,11 +45,16 @@
             </div>
 
         </div>
-        <div class="d-flex flex-row flex-grow-1" style="overflow: hidden;">
-            <div class="col-2" style="background-color:white;"> tEST</div>
-            <div  class="col-10 overflow-auto p-3">{% block content %}
-                <!-- Contenu spécifique à chaque page -->
-                {% endblock %}</div>
+        <div class="container-fluid flex-grow-1" style="height: calc(100vh - 60px); overflow: hidden;">
+          <div class="row h-100">
+            <div class="col-2 bg-white h-100">
+              tEST
+            </div>
+            <div class="col-10 overflow-auto h-100">
+              {% block content %}
+              {% endblock %}
+            </div>
+          </div>
         </div>
     </div>
 
